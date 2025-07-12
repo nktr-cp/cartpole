@@ -10,7 +10,7 @@ jupyter: ensure-venv
 
 .PHONY: run
 run: ensure-venv
-	$(VENV)/bin/jupyter nbconvert --to notebook --execute --inplace src/random_play.ipynb
+	$(VENV)/bin/jupyter nbconvert --to notebook --execute --inplace src/dqn.ipynb
 
 .PHONY: ensure-venv
 ensure-venv:
