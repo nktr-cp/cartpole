@@ -15,7 +15,6 @@ run: ensure-venv
 .PHONY: ensure-venv
 ensure-venv:
 	@test -x $(PYTHON) || (python3 -m venv $(VENV) && echo "✅ Created $(VENV)")
-	@$(PIP) install --upgrade pip > /dev/null
 
 .PHONY: setup
 setup: ensure-venv
